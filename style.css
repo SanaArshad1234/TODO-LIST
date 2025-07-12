@@ -1,0 +1,107 @@
+/* Basic Reset and Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Main Container for the To-Do App */
+.todo-container {
+  margin: 50px auto;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 10px;
+  padding: 25px;
+  background-color: #f9f9f9;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Style */
+.todo-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input Field Style */
+input {
+  width: 65%;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Add Button Style */
+button {
+  width: 30%;
+  max-width: 100px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #43a047;
+}
+
+/* Task List Items */
+.list-text {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+/* Checked/Completed Task */
+.checked {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Trash/Delete Icon */
+.fa-solid.fa-trash {
+  cursor: pointer;
+  color: red;
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.fa-solid.fa-trash:hover {
+  color: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .todo-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  input {
+    width: 60%;
+  }
+
+  button {
+    width: 35%;
+  }
+
+  .list-text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
